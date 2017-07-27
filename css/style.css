@@ -1,0 +1,105 @@
+/* Sets the font, font color, max width for the main page and centers the content. */
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #2d3c49;
+	font-weight: 300;
+	max-width: 900px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+/* Ensures the header is large enough to encompase the logo image. */
+header {
+	min-height: 125px;
+	margin: 10px;
+}
+/* Recolors link hyperlink and removes the underline */
+a:link {
+	text-decoration: none;
+	color: #2d3c49;
+	font-size: 100%;
+	font-weight: 400;
+}
+/* Recolors the hyperlink when hovering over it with a cursor */
+a:hover {
+	color: #BA4A00;
+}
+/* Allows sections to be tile side by side but also clear the floats in the header. */
+section {
+	display: -webkit-flex;
+	display: flex;
+	clear: left;
+	clear: right;
+}
+/* Sets the horiztonal rule visuals and clears it of the header floats */
+hr {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #7d97ad inset;
+	clear: left;
+	clear: right;
+	max-width: 880px;
+}
+/* Establishes a margin for the headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+/* Ensures the main image fills it's parent element.*/
+#main_img {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+/* Ensures the portfolio images fill their parent element. */
+.work_img	{
+	width: 100%;
+}
+/* Sets the Logo image in the top left corner. */
+.header_logo {
+	float: left;
+}
+/* Sets the page name to the right corner */
+.header_name {
+	float: right;
+	text-align: right;
+	margin-top: 10px;
+}
+/* Allows the portfolio divs to shrink onto he same row */
+.portfolio {
+	min-width: 24%;
+	padding: 10px;
+}
+/* Establishes font settings for my name */
+#myname {
+	font-size: 350%;
+	font-weight: 300;
+}
+/* Establishes font settings for the site's tagline */
+#tagline {
+	font-size: 150%;
+	font-weight: 400;
+}
+/* Establishes font and layout settings for the portfolio section header. */
+#portfolio_header {
+	margin-top: 20px;
+	padding-left: 10px; 
+	color: #7397ad; 
+	font-weight: 400;
+	font-size: 165%;
+	margin-bottom: 0;
+}
+/* Allos the portfolio sections to remain visible when the screen size shrinks for mobile */
+@media screen and (max-width: 850px){
+	section {
+		display: block;
+		width: 95%;
+	}
+	.portfolio {
+		min-width: 95%;
+	}
+}
